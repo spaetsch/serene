@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var webpack = require('gulp-webpack');
-var minify-css = require('gulp-minify-css');
+var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 
 gulp.task('sass:watch', function () {
@@ -24,7 +24,7 @@ gulp.task('sass', function () {
   gulp.src('./dev/scss/**/*.scss')
     .pipe(sass()
       .on('error', sass.logError))
-    .pipe(gulp.dest('./dev/CSS/'));
+    .pipe(gulp.dest('./dev/css/'));
 });
 
 gulp.task('webpackdev', function() {
@@ -35,13 +35,13 @@ gulp.task('webpackdev', function() {
       }
     }))
     .pipe(uglify())
-    .pipe(gulp.dest('./build/'));
+    .pipe(gulp.dest('./build/js/'));
 });
 
-gulp.task('minify-css', function() {
-  return gulp.src('./dev/CSS/*.css')
-    .pipe(minify-css({compatibility: 'ie8'}))
-    .pipe(gulp.dest('./build/CSS/'));
+gulp.task('minifyCSS', function() {
+  return gulp.src('./dev/css/*.css')
+    .pipe(minifyCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('build', ['copy-HTML', 'webpackdev', 'sass', 'minify-css']);
+gulp.task('build', ['copy-HTML', 'webpackdev', 'sass', 'minifyCSS']);
