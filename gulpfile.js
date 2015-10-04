@@ -10,6 +10,13 @@ gulp.task('sass:watch', function () {
   gulp.watch('./dev/scss/**/*.scss', ['sass']);
 });
 
+gulp.task('sass', function () {
+  gulp.src('./dev/scss/**/*.scss')
+    .pipe(sass()
+      .on('error', sass.logError))
+    .pipe(gulp.dest('./dev/css/'));
+});
+
 gulp.task('copy-HTML', function() {
   var opts = {
     conditionals: true,
@@ -18,13 +25,6 @@ gulp.task('copy-HTML', function() {
     return gulp.src('dev/**/*.html')
     .pipe(gulp.dest('build/'))
     .pipe(gulp.dest('./build/'));
-});
-
-gulp.task('sass', function () {
-  gulp.src('./dev/scss/**/*.scss')
-    .pipe(sass()
-      .on('error', sass.logError))
-    .pipe(gulp.dest('./dev/css/'));
 });
 
 gulp.task('webpackdev', function() {
@@ -44,4 +44,7 @@ gulp.task('minifyCSS', function() {
     .pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('build', ['copy-HTML', 'webpackdev', 'sass', 'minifyCSS']);
+gulp.task('build', ['copy-HTML', 'webpackdev', 'minifyCSS']);
+
+
+
