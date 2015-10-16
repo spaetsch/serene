@@ -108,6 +108,9 @@ p {
     .hero {
       height: 70em; } }
 
+.stripe {
+  min-height: 50em; }
+
 .textbox {
   padding: 2em 1em;
   text-align: justify; }
@@ -240,10 +243,8 @@ a.menu-link.active,
 nav a.active {
   color: red; }
 
-.back {
-  background-color: #f8f6f6;
-  border: thin solid black;
-  height: 10em; }
+#section2, #section4 {
+  background-color: rgba(164, 165, 99, 0.2); }
 
 @font-face {
   font-family: 'Quicksand';

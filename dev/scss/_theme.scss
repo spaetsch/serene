@@ -25,8 +25,6 @@ a.menu-link.active,
 nav a.active {
   color: red;
 }
-.back {
-  background-color: $shaded;
-  border: thin solid black;
-  height: 10em;
+#section2, #section4 {
+  background-color: $shaded-color1;
 }
