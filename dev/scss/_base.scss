@@ -9,9 +9,13 @@ a {
 img {
   width: 100%;
 }
-h1 {
+h1, h2, h3, h4 {
   padding-bottom: 0.5em;
 }
+h3, h4 {
+  font-weight: 600;
+}
+
 p {
   padding: 0.25em 0;
 }

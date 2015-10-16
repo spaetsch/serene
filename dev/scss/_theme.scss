@@ -8,11 +8,14 @@
     background-attachment: fixed;
   }
 }
-h1 {
+h1, h2 {
   font-family: "Rock-salt", Helvetica, sans-serif;
 }
 p,
-a {
+a,
+label,
+h3,
+h4 {
   font-family: "Quicksand", Helvetica, sans-serif;
 }
 .hero h1{
