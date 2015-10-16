@@ -43,5 +43,4 @@ sftp-config*
 
 # Project specific #
 ####################
-/dev
 /node_modules
