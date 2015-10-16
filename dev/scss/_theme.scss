@@ -1,6 +1,12 @@
 .hero {
-  background: url("../../img/canyon-full.jpg") no-repeat center center fixed;
+  background-image: url("../../img/canyon-full.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   background-size: cover;
+  background-attachment: scroll;
+  @media screen and (min-width: $med-screen){
+    background-attachment: fixed;
+  }
 }
 h1 {
   font-family: "Rock-salt", Helvetica, sans-serif;

@@ -1,5 +1,4 @@
 
-
 $(document).ready(function() {
   // navigation toggles
   // based on http://codepen.io/bradfrost/pen/sHvaz

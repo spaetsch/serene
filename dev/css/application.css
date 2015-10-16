@@ -109,10 +109,10 @@ p {
       height: 70em; } }
 
 .stripe {
-  min-height: 50em; }
+  min-height: 65em;
+  padding: 2em 1em; }
 
 .textbox {
-  padding: 2em 1em;
   text-align: justify; }
 
 a.menu-link {
@@ -217,8 +217,14 @@ nav[role=navigation] li a {
   transform: translateY(100%); }
 
 .hero {
-  background: url("../../img/canyon-full.jpg") no-repeat center center fixed;
-  background-size: cover; }
+  background-image: url("../../img/canyon-full.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: scroll; }
+  @media screen and (min-width: 45em) {
+    .hero {
+      background-attachment: fixed; } }
 
 h1 {
   font-family: "Rock-salt", Helvetica, sans-serif; }
