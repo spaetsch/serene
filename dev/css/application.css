@@ -297,14 +297,14 @@ input {
   transform: translateY(100%); }
 
 .hero {
-  background-image: url("../../img/canyon-full.jpg");
+  background-image: url("../../img/canyon.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: scroll; }
+  background-position: center top; }
   @media screen and (min-width: 45em) {
     .hero {
-      background-attachment: fixed; } }
+      background-image: url("../../img/canyon-full.jpg");
+      background-size: cover; } }
 
 h1, h2 {
   font-family: "Rock-salt", Helvetica, sans-serif; }
