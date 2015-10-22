@@ -1,29 +1,4 @@
-//inspired by cool stuff on lukegabrieli.com
-
-.align-top {
-    vertical-align: top;
-  }
-
-
-
-.img-box {
-  position: relative;
-  overflow: hidden;
-}
-
-
 .img-box .caption {
-  //layout
-  width: 100%;
-  height: 100%;
-  top: -100%;
-  text-align: center;
-  position: absolute;
-  z-index: 1;
-//theme
-  background-color: rgba(3,146,82,0.9);
-  color: white;
-//animation
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -38,13 +13,5 @@
 }
 
 
-//utility layout
-.vertical-ctr {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  width: 100%;
-}
+
 

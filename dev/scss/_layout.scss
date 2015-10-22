@@ -13,7 +13,17 @@
 .textbox {
   text-align: justify;
 }
-
+.vertical-ctr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 100%;
+}
+.align-top {
+  vertical-align: top;
+}
 // navigation
 // based on http://codepen.io/bradfrost/pen/sHvaz
 a.menu-link {
@@ -79,6 +89,19 @@ a.menu-link {
 
   }
 
+//garage doors
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+.img-box .caption {
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
 // some styling borrowed from skeleton for buttons and forms
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

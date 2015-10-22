@@ -119,6 +119,17 @@ p {
 .textbox {
   text-align: justify; }
 
+.vertical-ctr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 100%; }
+
+.align-top {
+  vertical-align: top; }
+
 a.menu-link {
   display: block;
   padding: 1em;
@@ -173,6 +184,18 @@ nav[role=navigation] li a {
     margin: 0 0.25em; }
   nav[role=navigation] li a {
     border: 0; } }
+
+.img-box {
+  position: relative;
+  overflow: hidden; }
+
+.img-box .caption {
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1; }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -250,22 +273,7 @@ input {
   max-width: 28em;
   margin-bottom: 1em; }
 
-.align-top {
-  vertical-align: top; }
-
-.img-box {
-  position: relative;
-  overflow: hidden; }
-
 .img-box .caption {
-  width: 100%;
-  height: 100%;
-  top: -100%;
-  text-align: center;
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(3, 146, 82, 0.9);
-  color: white;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -277,14 +285,6 @@ input {
   -o-transform: translateY(100%);
   -webkit-transform: translateY(100%);
   transform: translateY(100%); }
-
-.vertical-ctr {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  width: 100%; }
 
 .hero {
   background-image: url("../../img/canyon.jpg");
@@ -324,6 +324,10 @@ nav a.active {
 
 #section2, #section4 {
   background-color: rgba(164, 165, 99, 0.2); }
+
+.img-box .caption {
+  background-color: rgba(3, 146, 82, 0.9);
+  color: white; }
 
 @font-face {
   font-family: 'Quicksand';
