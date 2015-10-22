@@ -12,6 +12,18 @@
   transform: translateY(100%);
 }
 
+.img-box:before {
+  top: 0.625em;
+  right: 0.625em;
+}
+
+.img-box:before {
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+}
+.img-box:hover:before {
+  opacity: 0;
+}
 
 
 

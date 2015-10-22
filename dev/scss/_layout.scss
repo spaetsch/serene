@@ -102,6 +102,19 @@ a.menu-link {
   position: absolute;
   z-index: 1;
 }
+.img-box:before {
+  content: "?";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-border-radius: .75em;
+  -moz-border-radius:    .75em;
+  border-radius:         .75em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+
 // some styling borrowed from skeleton for buttons and forms
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

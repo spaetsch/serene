@@ -43,3 +43,7 @@ nav a.active {
   background-color: $door-color;
   color: $text-color;
 }
+.img-box:before {
+  background: $shaded;//rgba(255, 255, 255, 0.75);
+  color: black;
+}
