@@ -40,6 +40,6 @@ nav a.active {
 
 // garage door
 .img-box .caption {
-  background-color: rgba(3,146,82,0.9);
-  color: white;
+  background-color: $door-color;
+  color: $text-color;
 }
