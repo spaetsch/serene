@@ -1,9 +1,16 @@
 //inspired by cool stuff on lukegabrieli.com
 
+.align-top {
+    vertical-align: top;
+  }
+
+
+
 .img-box {
   position: relative;
   overflow: hidden;
 }
+
 
 .img-box .caption {
   //layout
@@ -29,6 +36,7 @@
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
+
 
 //utility layout
 .vertical-ctr {

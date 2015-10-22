@@ -250,6 +250,9 @@ input {
   max-width: 28em;
   margin-bottom: 1em; }
 
+.align-top {
+  vertical-align: top; }
+
 .img-box {
   position: relative;
   overflow: hidden; }
