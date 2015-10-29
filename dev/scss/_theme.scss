@@ -8,8 +8,9 @@
     background-size: cover;
   }
 }
+
 h1, h2 {
-  font-family: "Rock-salt", Helvetica, sans-serif;
+  font-family: "Journal", Helvetica, sans-serif;
 }
 p,
 a,
@@ -19,12 +20,12 @@ h4 {
   font-family: "Quicksand", Helvetica, sans-serif;
 }
 .hero h1{
-  font-size: 2em;
-  line-height: 1.5em;
-  padding-top: 7em;
+  font-size: 5em;
+  //line-height: 1.5em;
+  padding-top: 3em;
   @media screen and (min-width: $med-screen){
-    font-size: 3em;
-    line-height: 2em;
+    font-size: 8em;
+   // line-height: 2em;
   }
 }
 .textbox p {
