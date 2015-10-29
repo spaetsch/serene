@@ -21,11 +21,9 @@ h4 {
 }
 .hero h1{
   font-size: 5em;
-  //line-height: 1.5em;
   padding-top: 3em;
   @media screen and (min-width: $med-screen){
     font-size: 8em;
-   // line-height: 2em;
   }
 }
 .textbox p {
@@ -40,7 +38,8 @@ nav a.active {
 }
 
 // garage door
-.img-box .caption {
+.img-box .caption,
+.back {
   background-color: $door-color;
   color: $text-color;
 }
