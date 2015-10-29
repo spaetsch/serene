@@ -57,7 +57,8 @@ a.menu-link {
   opacity: 0.8;
   color: $text-colorlight;
 }
-.garage-img:before {
+.garage-img:before,
+.flip-front:before {
   background: $overlay;
   color: $text-colordark;
 }

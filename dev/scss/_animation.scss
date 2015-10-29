@@ -14,24 +14,18 @@
   transform: translateY(100%);
 }
 
-.garage-img:before {
-  top: 0.625em;
-  right: 0.625em;
-}
-
-.garage-img:before {
+// ? fadeout
+.garage-img:before,
+.flip-front:before
+ {
   -moz-transition: all 0.6s ease;
   opacity: 0.75;
 }
-.garage-img:hover:before {
+.garage-img:hover:before,
+.flip-front:hover:before {
   opacity: 0;
 }
 
-
-//TODO:add ghost ? to flippers
-
-//TODO : rename classes by function -
-// flip-front, flip-back
 
 // card flip animation
 /* entire container, keeps perspective */
