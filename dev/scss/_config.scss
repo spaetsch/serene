@@ -2,7 +2,10 @@
 $med-screen: 45em;
 
 //color variables
-$overlay: #f8f6f6;
+$overlaybase: #f8f6f6;
+$overlay: rgba($overlaybase, 0.7);
+
+$navborder-color: #808080;
 
 $bgdcolor1: #a4a563;
 

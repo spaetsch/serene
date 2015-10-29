@@ -1,14 +1,4 @@
-.hero {
-  background-image: url("../../img/canyon.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center top;
-  @media screen and (min-width: $med-screen){
-    background-image: url("../../img/canyon-full.jpg");
-    background-size: cover;
-  }
-}
-
+//general text styling
 h1, h2 {
   font-family: "Journal", Helvetica, sans-serif;
 }
@@ -20,6 +10,21 @@ h4 {
   font-family: "Quicksand", Helvetica, sans-serif;
   line-height: 1.25em;
 }
+
+//styling basic site layout components
+.hero {
+  background-image: url("../../img/canyon.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  @media screen and (min-width: $med-screen){
+    background-image: url("../../img/canyon-full.jpg");
+    background-size: cover;
+  }
+}
+#section2, #section4 {
+  background-color: $faded-bgdcolor1;
+}
 .hero h1{
   font-size: 5em;
   padding-top: 3em;
@@ -28,22 +33,31 @@ h4 {
   }
 }
 
+//navigation theme styles
 a.menu-link.active,
 nav a.active {
   color: $text-coloractive;
 }
-#section2, #section4 {
-  background-color: $faded-bgdcolor1;
+a.menu-link {
+  background-color: $overlay;
 }
+  nav[role=navigation] {
+  background-color: $overlay;
+  }
+  nav[role=navigation] ul {
+    border-top: 1px solid $navborder-color;
+  }
+  nav[role=navigation] li a {
+    border-bottom: 1px solid $navborder-color;
+  }
 
 // garage door
-.img-box .caption,
-.back {
+.garage-img .garage-text {
   background-color: $garage-cardcolor;
   opacity: 0.8;
   color: $text-colorlight;
 }
-.img-box:before {
+.garage-img:before {
   background: $overlay;
   color: $text-colordark;
 }

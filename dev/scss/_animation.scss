@@ -1,29 +1,74 @@
-.img-box .caption {
+//garage door animation
+
+.garage-img .garage-text {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   -ms-transition: all .5s ease;
   transition: all .5s ease;
 }
-.img-box:hover .caption {
+.garage-img:hover .garage-text {
   -moz-transform: translateY(100%);
   -o-transform: translateY(100%);
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 
-.img-box:before {
+.garage-img:before {
   top: 0.625em;
   right: 0.625em;
 }
 
-.img-box:before {
+.garage-img:before {
   -moz-transition: all 0.6s ease;
   opacity: 0.75;
 }
-.img-box:hover:before {
+.garage-img:hover:before {
   opacity: 0;
 }
 
 
+//TODO:add ghost ? to flippers
+
+//TODO : rename classes by function -
+// flip-front, flip-back
+
+// card flip animation
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+//TODO need color to fill full back side
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.flip-front, .flip-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.flip-front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.flip-back {
+  transform: rotateY(180deg);
+}
 
