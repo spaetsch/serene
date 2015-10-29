@@ -18,6 +18,7 @@ label,
 h3,
 h4 {
   font-family: "Quicksand", Helvetica, sans-serif;
+  line-height: 1.25em;
 }
 .hero h1{
   font-size: 5em;
@@ -26,24 +27,23 @@ h4 {
     font-size: 8em;
   }
 }
-.textbox p {
-  line-height: 1.5em;
-}
+
 a.menu-link.active,
 nav a.active {
-  color: red;
+  color: $text-coloractive;
 }
 #section2, #section4 {
-  background-color: $shaded-color1;
+  background-color: $faded-bgdcolor1;
 }
 
 // garage door
 .img-box .caption,
 .back {
-  background-color: $door-color;
-  color: $text-color;
+  background-color: $garage-cardcolor;
+  opacity: 0.8;
+  color: $text-colorlight;
 }
 .img-box:before {
-  background: $shaded;//rgba(255, 255, 255, 0.75);
-  color: black;
+  background: $overlay;
+  color: $text-colordark;
 }

@@ -1,4 +1,4 @@
-
+//general page structure
 .hero {
   text-align: center;
   height: 35em;
@@ -10,7 +10,9 @@
   min-height: 45em;
   padding: 2em 1em;
 }
-.textbox {
+
+//layout utility styles
+.justify {
   text-align: justify;
 }
 .vertical-ctr {
@@ -24,6 +26,7 @@
 .align-top {
   vertical-align: top;
 }
+
 // navigation
 // based on http://codepen.io/bradfrost/pen/sHvaz
 a.menu-link {
@@ -86,7 +89,6 @@ a.menu-link {
     nav[role=navigation] li a {
       border: 0;
     }
-
   }
 
 //garage doors
@@ -113,6 +115,7 @@ a.menu-link {
   text-align: center;
   line-height: 1.5em;
 }
+//TODO:add ghost ? to flippers
 
 //card flip
 /* entire container, keeps perspective */
@@ -128,6 +131,8 @@ a.menu-link {
 //   width: 320px;
 //   height: 480px;
 // }
+
+//TODO need color to fill full back side
 
 /* flip speed goes here */
 .flipper {
@@ -158,10 +163,14 @@ a.menu-link {
   transform: rotateY(180deg);
 }
 
+//TODO : rename classes by function -
+//garage-img, garage-text, flip-front, flip-back
 
 // some styling borrowed from skeleton for buttons and forms
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+//TODO: convert to ems, pull out colors to theme styling
 
 button,
 input[type="submit"],

@@ -1,7 +1,15 @@
+//viewport sizes
 $med-screen: 45em;
-$shaded: #f8f6f6;
-$color1: #a4a563;
-$shaded-color1: rgba($color1, 0.2);
 
-$door-color: rgba(0, 102, 0, 0.8);
-$text-color: white;
+//color variables
+$overlay: #f8f6f6;
+
+$bgdcolor1: #a4a563;
+
+$faded-bgdcolor1: rgba($bgdcolor1, 0.2);
+
+$garage-cardcolor: #006600;
+
+$text-colorlight: white;
+$text-colordark: black;
+$text-coloractive: red;
