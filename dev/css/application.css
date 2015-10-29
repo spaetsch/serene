@@ -116,10 +116,10 @@ h2 {
   height: 35em; }
   @media screen and (min-width: 45em) {
     .hero {
-      height: 70em; } }
+      height: 60em; } }
 
 .stripe {
-  min-height: 65em;
+  min-height: 45em;
   padding: 2em 1em; }
 
 .textbox {
