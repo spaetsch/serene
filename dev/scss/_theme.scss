@@ -52,12 +52,12 @@ a.menu-link {
   }
 
 // garage door
-.garage-img .garage-text {
+.garage-card .garage-text {
   background-color: $garage-cardcolor;
   opacity: 0.8;
   color: $text-colorlight;
 }
-.garage-img:before,
+.garage-card:before,
 .flip-front:before {
   background: $overlay;
   color: $text-colordark;

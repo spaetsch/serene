@@ -86,11 +86,11 @@ a.menu-link {
   }
 
 //garage doors
-.garage-img {
+.garage-card {
   position: relative;
   overflow: hidden;
 }
-.garage-img .garage-text {
+.garage-card .garage-text {
   width: 100%;
   height: 100%;
   top: -100%;
@@ -98,7 +98,7 @@ a.menu-link {
   position: absolute;
   z-index: 1;
 }
-.garage-img:before,
+.garage-card:before,
 .flip-front:before {
   content: "?";
   position: absolute;
@@ -113,12 +113,7 @@ a.menu-link {
   right: 0.625em;
 }
 
-//card flip
-.flip-back p {
-  background-color: red;
-  width: 100%;
-  height: 100%;
-}
+
 
 // some styling borrowed from skeleton for buttons and forms
 /* Buttons
