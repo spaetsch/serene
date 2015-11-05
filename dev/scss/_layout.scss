@@ -131,6 +131,8 @@ input[type="button"] {
   padding-right: 0.25em;
   width: 100%;
   max-width: 14em;
+  margin-bottom: 1em;
+
 }
 input[type="email"],
 input[type="text"],
@@ -138,16 +140,24 @@ input[type="password"] {
   height: 3em;
   width: 100%;
   max-width: 28em;
+  margin-bottom: 1em;
+
 }
 textarea {
   height: 21em;
   width: 100%;
   max-width: 28em;
+  margin-bottom: 1em;
+
 }
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.25em;
+}
+p.forgot {
+  position: relative;
+  top: -0.75em;
 }
 
 
