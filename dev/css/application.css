@@ -333,10 +333,11 @@ input {
 .face.back {
   display: block;
   transform: rotateY(180deg);
-  padding: 10px;
   color: white;
   text-align: center;
-  background-color: #aaa; }
+  background-color: #aaa;
+  height: 10em;
+  width: 100%; }
 
 h1, h2 {
   font-family: "Journal", Helvetica, sans-serif; }

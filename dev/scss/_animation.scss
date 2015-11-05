@@ -28,6 +28,7 @@
 
 
 // card flip
+// NEEDS WORK. need JS to create responsive height.
 
 .flip-container {
   position: relative;
@@ -47,7 +48,9 @@
 .face {
   position: absolute;
   backface-visibility: hidden;
+
 }
+
 .face.back {
   display: block;
   transform: rotateY(180deg);
@@ -55,7 +58,8 @@
   color: white;
   text-align: center;
   background-color: #aaa;
-  //height: 10em;
+  height: 10em;
+  width: 100%;
 }
 
 
