@@ -62,3 +62,42 @@ a.menu-link {
   background: $overlay;
   color: $text-colordark;
 }
+
+// buttons and forms
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  color: $text-colordark;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 1px solid $bgdcolor1;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: $text-colordark;
+  border-color: $form-border-active;
+  outline: 0;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
+  background-color: #fff;
+  border: 1px solid $bgdcolor1;
+  border-radius: 0.5em;
+}
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus{
+  border: 1px solid $form-border-active;
+  outline: 0;
+}
