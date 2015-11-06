@@ -98,7 +98,23 @@ a.menu-link {
   position: absolute;
   z-index: 1;
 }
-.garage-card:before{
+
+// fade in card transition
+.fadein-card {
+  position: relative;
+}
+.fadein-card .fadein-text {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+// (?)
+.garage-card:before,
+.fadein-card:before{
   content: "?";
   position: absolute;
   width: 1.5em;
@@ -111,7 +127,3 @@ a.menu-link {
   top: 0.625em;
   right: 0.625em;
 }
-
-
-
-

@@ -57,13 +57,16 @@ a.menu-link {
   opacity: 0.8;
   color: $text-light;
 }
-.garage-card:before {
-  background: $overlay;
-  color: $text-dark;
-}
+
 //fadein card
 .fadein-card .fadein-text {
   background-color: $item-color1;
   color: $text-light;
+}
+//(?)
+.garage-card:before,
+.fadein-card:before {
+  background: $overlay;
+  color: $text-dark;
 }
 
