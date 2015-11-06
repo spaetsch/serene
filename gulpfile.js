@@ -32,6 +32,9 @@ gulp.task('webpackdev', function() {
     .pipe(webpack({
       output: {
         filename: 'bundle.js'
+      },
+      externals:{
+        jquery: 'jQuery' //dependent on loading jquery from CDN
       }
     }))
     .pipe(uglify())
