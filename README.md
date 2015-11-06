@@ -1,2 +1,2 @@
 # serene
-exercise in layout and animation via JS and CSS
+Experiments in UI transitions, using CSS and JS
