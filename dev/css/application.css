@@ -293,10 +293,13 @@ nav[role=navigation] li a {
   opacity: 0.8;
   color: white; }
 
-.garage-card:before,
-.flip-front:before {
+.garage-card:before {
   background: rgba(248, 246, 246, 0.7);
   color: black; }
+
+.fadein-card .fadein-text {
+  background-color: #006600;
+  color: white; }
 
 @font-face {
   font-family: 'Quicksand';
