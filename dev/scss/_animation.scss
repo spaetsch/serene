@@ -27,39 +27,5 @@
 }
 
 
-// card flip
-// NEEDS WORK. need JS to create responsive height.
-
-.flip-container {
-  position: relative;
-  z-index: 1;
-}
-.flip-container {
-  -webkit-perspective: 1000;
-}
-.flip-card {
-  transform-style: preserve-3d;
-  transition: all 1.0s linear;
-}
-.flip-container:hover .flip-card {
-  transform: rotateY(180deg);
-}
-
-.face {
-  position: absolute;
-  backface-visibility: hidden;
-
-}
-
-.face.back {
-  display: block;
-  transform: rotateY(180deg);
-  //padding: 10px;
-  color: white;
-  text-align: center;
-  background-color: #aaa;
-  height: 10em;
-  width: 100%;
-}
 
 
