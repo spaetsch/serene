@@ -22,8 +22,8 @@ h4 {
     background-size: cover;
   }
 }
-#section2, #section4 {
-  background-color: $faded-bgdcolor1;
+#section2, footer {
+  background-color: $bgd-color1;
 }
 .hero h1{
   font-size: 5em;
@@ -36,7 +36,7 @@ h4 {
 //navigation theme styles
 a.menu-link.active,
 nav a.active {
-  color: $text-coloractive;
+  color: $text-active;
 }
 a.menu-link {
   background-color: $overlay;
@@ -53,51 +53,14 @@ a.menu-link {
 
 // garage door
 .garage-card .garage-text {
-  background-color: $garage-cardcolor;
+  background-color: $item-color1;
   opacity: 0.8;
-  color: $text-colorlight;
+  color: $text-light;
 }
 .garage-card:before,
 .flip-front:before {
   background: $overlay;
-  color: $text-colordark;
+  color: $text-dark;
 }
 
-// buttons and forms
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  color: $text-colordark;
-  background-color: transparent;
-  border-radius: 0.5em;
-  border: 1px solid $bgdcolor1;
-}
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: $text-colordark;
-  border-color: $form-border-active;
-  outline: 0;
-}
-input[type="email"],
-input[type="text"],
-input[type="password"],
-textarea {
-  background-color: #fff;
-  border: 1px solid $bgdcolor1;
-  border-radius: 0.5em;
-}
-input[type="email"]:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea:focus{
-  border: 1px solid $form-border-active;
-  outline: 0;
-}
+

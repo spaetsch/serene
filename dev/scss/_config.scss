@@ -2,20 +2,15 @@
 $med-screen: 45em;
 
 //color variables
-$overlaybase: #f8f6f6;
-$overlay: rgba($overlaybase, 0.7);
-
+$overlay: rgba(248, 246, 246, 0.7);
 $navborder-color: #808080;
 
-$bgdcolor1: #a4a563;
+$text-light: white;
+$text-dark: black;
+$text-active: green;
 
-$faded-bgdcolor1: rgba($bgdcolor1, 0.2);
+$bgd-color1: rgba(164, 165, 99, 0.2);
 
-$garage-cardcolor: #006600;
+$item-color1: #006600;
 
-$text-colorlight: white;
-$text-colordark: black;
-$text-coloractive: red;
 
-$form-border: gray;
-$form-border-active: blue;
