@@ -26,6 +26,14 @@
   opacity: 0;
 }
 
+// fade in transition
+.fadein-card .fadein-text {
+  -webkit-transition: all 0.6s ease;
+  opacity: 0;
+}
+.fadein-card:hover .fadein-text {
+  opacity: 1;
+}
 
 
 

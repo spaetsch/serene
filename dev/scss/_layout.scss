@@ -98,8 +98,7 @@ a.menu-link {
   position: absolute;
   z-index: 1;
 }
-.garage-card:before,
-.flip-front:before {
+.garage-card:before{
   content: "?";
   position: absolute;
   width: 1.5em;
@@ -113,41 +112,6 @@ a.menu-link {
   right: 0.625em;
 }
 
-//buttons and forms
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: block;
-  height: 2.5em;
-  padding: 0 2em;
-  text-align: center;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
-  width: 100%;
-  max-width: 14em;
-  margin-bottom: 1em;
-}
-input[type="email"],
-input[type="text"],
-input[type="password"] {
-  height: 3em;
-  width: 100%;
-  max-width: 28em;
-  margin-bottom: 1em;
-}
-textarea {
-  height: 21em;
-  width: 100%;
-  max-width: 50em;
-  margin-bottom: 1em;
-}
-label,
-legend {
-  display: block;
-  margin-bottom: 0.25em;
-}
-p.forgot {
-  position: relative;
-  top: -0.75em;
-}
+
+
+
