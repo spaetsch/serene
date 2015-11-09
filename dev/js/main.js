@@ -39,21 +39,34 @@ $(document).ready(function() {
     }
   });
 
-  // testing waypoints
-  // var waypoint = new Waypoint({
-  // element: document.getElementById('basic-waypoint'),
-  // handler: function() {
-  //   console.log('Basic waypoint triggered')
+  //testing waypoint/animate.css
+  $('#about-slide1').css('opacity', 0);
+  $('#about-slide2').css('opacity', 0);
+  $('#about-slide3').css('opacity', 0);
+  $('#about-slide4').css('opacity', 0);
+  $('#about-slide5').css('opacity', 0);
 
-  //   }
-  // }, {offset: '100%'});
 
-  $('#test').css('opacity', 0);
 
-  $('#test').waypoint(function() {
-      $('#test').addClass('animated fadeInRight');
-      console.log('Basic waypoint triggered')
-
+  $('#about-slide1').waypoint(function() {
+      console.log('about1 waypoint triggers');
+      $('#about-slide1').addClass('animated fadeInLeft');
+  }, { offset: '50%' });
+  $('#about-slide2').waypoint(function() {
+      console.log('about3 waypoint triggers');
+       $('#about-slide2').addClass('animated fadeInRight');
+  }, { offset: '50%' });
+  $('#about-slide3').waypoint(function() {
+      console.log('about3 waypoint triggers');
+      $('#about-slide3').addClass('animated fadeInRight');
+  }, { offset: '50%' });
+  $('#about-slide4').waypoint(function() {
+      console.log('about4 waypoint triggers');
+      $('#about-slide4').addClass('animated fadeInRight');
+  }, { offset: '50%' });
+  $('#about-slide5').waypoint(function() {
+      console.log('about5 waypoint triggers');
+      $('#about-slide5').addClass('animated fadeInRight');
   }, { offset: '50%' });
 
 });
