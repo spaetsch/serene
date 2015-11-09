@@ -1,10 +1,11 @@
-
 @import "meyer-reset";
 @import "config";
+
+@import "animate-sass/animate";
 
 @import "base";
 @import "grid";
 @import "layout";
-@import "animation";
+@import "transitions";
 @import "theme";
 @import "typography";
