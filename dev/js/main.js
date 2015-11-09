@@ -39,6 +39,23 @@ $(document).ready(function() {
     }
   });
 
+  // testing waypoints
+  // var waypoint = new Waypoint({
+  // element: document.getElementById('basic-waypoint'),
+  // handler: function() {
+  //   console.log('Basic waypoint triggered')
+
+  //   }
+  // }, {offset: '100%'});
+
+  $('#test').css('opacity', 0);
+
+  $('#test').waypoint(function() {
+      $('#test').addClass('animated fadeInRight');
+      console.log('Basic waypoint triggered')
+
+  }, { offset: '50%' });
+
 });
 
 
