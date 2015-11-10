@@ -39,33 +39,32 @@ $(document).ready(function() {
     }
   });
 
-  //testing waypoint/animate.css
+  //using waypoint/animate.css to animate items in About Us block
+
+  //TODO: Set initial opacity to 0 in CSS instead?
   $('#about-slide1').css('opacity', 0);
   $('#about-slide2').css('opacity', 0);
   $('#about-slide3').css('opacity', 0);
   $('#about-slide4').css('opacity', 0);
   $('#about-slide5').css('opacity', 0);
 
-
-
   $('#about-slide1').waypoint(function() {
-      console.log('about1 waypoint triggers');
       $('#about-slide1').addClass('animated fadeInLeft');
   }, { offset: '50%' });
+
   $('#about-slide2').waypoint(function() {
-      console.log('about3 waypoint triggers');
        $('#about-slide2').addClass('animated fadeInRight');
   }, { offset: '50%' });
+
   $('#about-slide3').waypoint(function() {
-      console.log('about3 waypoint triggers');
       $('#about-slide3').addClass('animated fadeInRight');
   }, { offset: '50%' });
+
   $('#about-slide4').waypoint(function() {
-      console.log('about4 waypoint triggers');
       $('#about-slide4').addClass('animated fadeInRight');
   }, { offset: '50%' });
+
   $('#about-slide5').waypoint(function() {
-      console.log('about5 waypoint triggers');
       $('#about-slide5').addClass('animated fadeInRight');
   }, { offset: '50%' });
 
