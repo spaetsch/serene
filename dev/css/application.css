@@ -204,7 +204,12 @@ nav[role=navigation] li a {
   top: -100%;
   text-align: center;
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  padding: 2em 0; }
+
+.garage-text p,
+.fadein-text p {
+  padding: 0.25em 1em; }
 
 .fadein-card {
   position: relative; }

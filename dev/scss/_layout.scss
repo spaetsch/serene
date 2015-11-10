@@ -100,8 +100,13 @@ a.menu-link {
   text-align: center;
   position: absolute;
   z-index: 1;
+  padding: 2em 0;
 }
 
+.garage-text p,
+.fadein-text p {
+  padding: 0.25em 1em;
+}
 // fade in card transition
 .fadein-card {
   position: relative;
