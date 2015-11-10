@@ -57,6 +57,10 @@ h1 {
 h2 {
   font-size: 1.5em; }
 
+footer {
+  font-size: 0.8em;
+  line-height: 1.6em; }
+
 /* six column grid */
 /* generated at responsivegridsystem.com */
 /*  SECTIONS  */
@@ -121,7 +125,10 @@ h2 {
       height: 60em; } }
 
 .stripe {
-  min-height: 45em;
+  min-height: 30em;
+  padding: 2em 1em; }
+
+footer {
   padding: 2em 1em; }
 
 .justify {
