@@ -41,9 +41,8 @@ $(document).ready(function() {
 
 //using waypoint/animate.css to animate items in About Us block
 // disabled for small screens
-if ($(this).width() > 720) {
+if ($(this).width() > 480) {
   $('#about-slide1').css('opacity', 0);
-  $('#about-slide2').css('opacity', 0);
   $('#about-slide3').css('opacity', 0);
   $('#about-slide4').css('opacity', 0);
   $('#about-slide5').css('opacity', 0);
@@ -52,20 +51,16 @@ if ($(this).width() > 720) {
       $('#about-slide1').addClass('animated fadeInLeft');
   }, { offset: '50%' });
 
-  $('#about-slide2').waypoint(function() {
-       $('#about-slide2').addClass('animated fadeInRight');
-  }, { offset: '50%' });
-
   $('#about-slide3').waypoint(function() {
-      $('#about-slide3').addClass('animated fadeInRight');
+      $('#about-slide3').addClass('animated fadeInUp');
   }, { offset: '50%' });
 
   $('#about-slide4').waypoint(function() {
-      $('#about-slide4').addClass('animated fadeInRight');
+      $('#about-slide4').addClass('animated fadeInUp');
   }, { offset: '50%' });
 
   $('#about-slide5').waypoint(function() {
-      $('#about-slide5').addClass('animated fadeInRight');
+      $('#about-slide5').addClass('animated fadeInUp');
   }, { offset: '50%' });
    }
 });
