@@ -39,9 +39,9 @@ $(document).ready(function() {
     }
   });
 
-  //using waypoint/animate.css to animate items in About Us block
-
-  //TODO: Set initial opacity to 0 in CSS instead?
+//using waypoint/animate.css to animate items in About Us block
+// disabled for small screens
+if ($(this).width() > 720) {
   $('#about-slide1').css('opacity', 0);
   $('#about-slide2').css('opacity', 0);
   $('#about-slide3').css('opacity', 0);
@@ -67,7 +67,7 @@ $(document).ready(function() {
   $('#about-slide5').waypoint(function() {
       $('#about-slide5').addClass('animated fadeInRight');
   }, { offset: '50%' });
-
+   }
 });
 
 
