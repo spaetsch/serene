@@ -17,7 +17,7 @@ h4 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
-  @media screen and (min-width: $med-screen){
+  @media screen and (min-width: $sm-screen){
     background-image: url("../../img/canyon-full.jpg");
     background-size: cover;
   }
